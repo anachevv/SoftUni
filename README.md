@@ -1,4 +1,4 @@
-# Software University
+![alt text](https://raw.githubusercontent.com/momchilantonov/SoftUni-Math-Concepts-For-Developers-February-2021/main/SoftUni-Logo.png)
 <h2>• Main information</h2>
 <h3>► This is a repository containing my solutions to problems from Software University.</h3>
 <h2>• Certificates</h2>
