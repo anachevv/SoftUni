@@ -1,4 +1,4 @@
-# SoftUni
+# Software University
 <h2>• Main information</h2>
 <h3>► This is a repository containing my solutions to problems from Software University.</h3>
 <h2>• Certificates</h2>
