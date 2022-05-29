@@ -6,4 +6,4 @@ lst.sort(reverse=True)
 
 number = ''.join(i for i in lst)
 
-print(number)
+print(int(number))
