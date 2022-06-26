@@ -3,6 +3,7 @@ command = input()
 blacklisted_names = 0
 lost_names = 0
 list_of_lost_names = []
+
 while command != 'Report':
     if command == 'Report':
         break
