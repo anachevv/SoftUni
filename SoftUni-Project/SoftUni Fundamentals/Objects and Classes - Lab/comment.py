@@ -7,3 +7,7 @@ class Comment:
 
 
 comment = Comment('2Bona', 'Ja sum za toa')
+
+print(comment.username)
+print(comment.content)
+print(comment.likes)
