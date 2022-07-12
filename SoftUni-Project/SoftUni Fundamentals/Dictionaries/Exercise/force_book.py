@@ -20,6 +20,7 @@ while command != "Lumpawaroo":
             for key, value in users_and_sides.items():
                 if force_user in value and key != force_side:
                     value.remove(force_user)
+
     elif "->" in command:
         force_user, force_side = command.split(" -> ")
 
