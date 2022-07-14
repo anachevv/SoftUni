@@ -1,12 +1,11 @@
-def replace_chars(text):
-    import re
-
+def squeeze(text):
     for char in text:
-        text = re.sub(fr"\\{char}+", f"{char}", text)
+        while char * 2 in text:
+            text = text.replace(char * 2, char)
 
     return text
 
 
-string = input()
+text = input()
 
-print(replace_chars(string))
+print(squeeze(text))
