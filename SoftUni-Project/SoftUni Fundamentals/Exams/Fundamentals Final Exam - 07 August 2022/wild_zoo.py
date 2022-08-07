@@ -18,10 +18,6 @@ while command != "EndDay":
                 del info[name]
     command = input()
 
-'''
-{'Adam': [4500, 'ByTheCreek'], 'Maya': [8830, 'WaterfallArea']}
-'''
-
 areas = {}
 print('Animals:')
 for name, info in info.items():
