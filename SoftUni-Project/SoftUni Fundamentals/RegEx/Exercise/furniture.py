@@ -1,7 +1,7 @@
 import re
 
 command = input()
-regex = r">>([A-za-z]+)<<([\d\.?]+)!(\d+)"
+regex = r">>([A-za-z]+)<<(\d+\.?\d*)!(\d+)"
 total_price = 0
 furniture_list = []
 while command != 'Purchase':
