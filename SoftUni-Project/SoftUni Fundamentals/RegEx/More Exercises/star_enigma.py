@@ -17,10 +17,6 @@ for _ in range(n_messages):
     for char in message:
         decrypted_message += chr(ord(char) - count)
     search_pattern = re.search(regex, decrypted_message)
-    """
-    PQ@Alderaa1:30000!A!->20000
-    @Cantonica:3000!D!->4000NM
-    """
     if search_pattern:
         planet = search_pattern.group(2)
         population = search_pattern.group(3)
@@ -34,6 +30,7 @@ for _ in range(n_messages):
             if planet not in destroyed:
                 destroyed_planets += 1
                 destroyed.append(planet)
+
 attacked = sorted(attacked)
 destroyed = sorted(destroyed)
 print("Attacked planets: {}".format(attacked_planets))
