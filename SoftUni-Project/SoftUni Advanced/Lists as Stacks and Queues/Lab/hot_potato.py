@@ -1,7 +1,6 @@
 kids_names = input().split()
 n_toss = int(input())
 count = 1
-removed = []
 while len(kids_names) != 1:
     if n_toss == 1:
         for index in range(len(kids_names)):
