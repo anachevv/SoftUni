@@ -1,11 +1,29 @@
+# Sample
+
+# command = input()
+# lst = []
+# while command != 'End':
+#     if command == 'Paid':
+#         print("\n".join(lst))
+#         lst.clear()
+#     else:
+#         lst.append(command)
+#
+#     command = input()
+# print("{} people remaining.".format(len(lst)))
+
+
+# Using queue
+
+from collections import deque
+
+queue = deque()
 command = input()
-lst = []
 while command != 'End':
     if command == 'Paid':
-        print("\n".join(lst))
-        lst.clear()
+        while queue:
+            print(queue.popleft())
     else:
-        lst.append(command)
-
+        queue.append(command)
     command = input()
-print("{} people remaining.".format(len(lst)))
+print(f"{len(queue)} people remaining.")
