@@ -1,22 +1,13 @@
-kids_names = input().split()
-n_toss = int(input())
-count = 1
-while len(kids_names) != 1:
-    if n_toss == 1:
-        for index in range(len(kids_names)):
-            index = 0
-            if index + 1 == len(kids_names):
-                break
-            print("Removed {}".format(kids_names[index]))
-            kids_names.remove(kids_names[index])
-    else:
-        new_list = []
-        for index in range(len(kids_names)):
-            if n_toss > 1 and count % n_toss != 0:
-                new_list.append(kids_names[index])
-            else:
-                print("Removed {}".format(kids_names[index]))
-            count += 1
+from collections import deque
 
-        kids_names = new_list
-print("Last is {}".format(kids_names[0]))
+kids_names = deque(input().split())
+n_toss = int(input())
+count = 0
+while len(kids_names) > 1:
+    count += 1
+    if count < n_toss:
+        kids_names.append(kids_names.popleft())
+    else:
+        print("Removed {}".format(kids_names.popleft()))
+        count = 0
+print("Last is {}".format(kids_names.popleft()))
