@@ -8,13 +8,13 @@ for _ in range(n_commands):
     else:
         if command == "2" and stack:
             stack.pop()
-        elif command == "3":
+        elif command == "3" and stack:
             max_number = -100000
             for number in stack:
                 if number > max_number:
                     max_number = number
             print(max_number)
-        elif command == "4":
+        elif command == "4" and stack:
             min_number = 100000
             for number in stack:
                 if number < min_number:
