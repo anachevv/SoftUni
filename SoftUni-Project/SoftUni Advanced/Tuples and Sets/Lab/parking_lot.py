@@ -9,7 +9,8 @@ for _ in range(n_commands):
     elif direction == 'OUT':
         if reg_number in reg_numbers:
             reg_numbers.remove(reg_number)
-if set(reg_numbers):
-    print("\n".join(set(reg_numbers)))
+reg_numbers = set(reg_numbers)
+if reg_numbers:
+    print("\n".join(reg_numbers))
 else:
     print("Parking Lot is Empty")
