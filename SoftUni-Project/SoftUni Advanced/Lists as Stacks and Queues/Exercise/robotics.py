@@ -44,13 +44,6 @@ def display_time(total_time):
 
 products = get_products()
 
-'''
-{'ROB': 15, 'SS2': 10, 'NX8000': 3}
-['ROB', 'SS2', 'NX8000']
-28800
-deque(['detail', 'glass', 'wood', 'apple'])
-'''
-
 while products:
     total_time = (total_time + 1) % (24 * 60 * 60)
 
