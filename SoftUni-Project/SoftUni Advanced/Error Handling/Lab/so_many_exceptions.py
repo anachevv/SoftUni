@@ -1,11 +1,10 @@
 numbers_list = [int(num) for num in input().split(", ")]
 result = 1
 
-for i in range(len(numbers_list)):
-    number = numbers_list[i]
+for number in numbers_list:
     if number <= 5:
         result *= number
-    elif 5 < number <= 10:
+    elif number <= 10:
         result /= number
 
 result = int(result)
