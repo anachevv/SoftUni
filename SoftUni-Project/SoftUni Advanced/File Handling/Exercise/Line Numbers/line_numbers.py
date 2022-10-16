@@ -21,8 +21,6 @@ def numbers(file):
 
             result += f"{line}: {curr_line.strip()} ({words}) ({marks})" + '\n'
 
-    f.close()
-
     return result
 
 
