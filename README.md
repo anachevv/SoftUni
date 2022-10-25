@@ -4,3 +4,4 @@
 <h2>• Certificates</h2>
 <h3>► Python Basics - https://softuni.bg/certificates/details/125736/639a81d7 </h3>
 <h3>► Python Fundamentals - https://softuni.bg/certificates/details/138777/ef814974 </h3>
+<h3>► Python Advanced - https://softuni.bg/certificates/details/143126/e264c28e </h3>
