@@ -1,9 +1,6 @@
 def squares(n):
-    num = 0
+    num = 1
 
-    while num < n:
-        num += 1
+    while num <= n:
         yield num ** 2
-
-
-print(list(squares(6)))
+        num += 1
