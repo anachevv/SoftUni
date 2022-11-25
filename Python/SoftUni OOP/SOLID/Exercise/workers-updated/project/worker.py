@@ -7,10 +7,6 @@ class Workable:
     def work(self):
         pass
 
-    @abstractmethod
-    def eat(self):
-        pass
-
 
 class Eatable:
     @abstractmethod
