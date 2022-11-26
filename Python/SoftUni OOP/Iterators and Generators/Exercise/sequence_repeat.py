@@ -20,6 +20,6 @@ class sequence_repeat:
         return new_seq
 
 
-result = sequence_repeat('I Love Python', 3)
+result = sequence_repeat('abc', 5)
 for item in result:
-    print(item, end='')
+    print(item, end ='')
