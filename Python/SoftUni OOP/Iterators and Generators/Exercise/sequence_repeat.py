@@ -22,5 +22,4 @@ class sequence_repeat:
 
 result = sequence_repeat('I Love Python', 3)
 for item in result:
-    print(item, end ='')
-
+    print(item, end='')
