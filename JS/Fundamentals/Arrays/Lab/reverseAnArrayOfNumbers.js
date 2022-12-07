@@ -10,7 +10,7 @@ function main(n, numbers) {
 
     newArray = newArray.reverse();
 
-    return newArray.join(" ").trim();
+    return newArray.join(" ");
 }
 
 console.log(
